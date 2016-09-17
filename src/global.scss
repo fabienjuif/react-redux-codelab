@@ -1,0 +1,19 @@
+// This file is not imported in the standard way, you can look at webpack.config.js
+// to see how it is done.
+// The reason is to avoid css-loader to modularize mui classes
+
+// https://www.muicss.com/docs/v1/css-js/customization
+// MUI imports normalize 3.0, so we don't need to import one
+@import '~muicss/lib/sass/mui/colors';
+
+// customize MUI variables
+$mui-primary-color:       mui-color('red', '500');
+$mui-primary-color-dark:  mui-color('red', '700');
+$mui-primary-color-light: mui-color('red', '100');
+
+$mui-accent-color:        mui-color('green', 'A200');
+$mui-accent-color-dark:   mui-color('green', 'A100');
+$mui-accent-color-light:  mui-color('green', 'A400');
+
+// import MUI SASS
+@import '!style!css!sass!~muicss/lib/sass/mui';

@@ -1,0 +1,25 @@
+@import '~styles/box-shadow';
+
+.result {
+  padding: 0;
+  width: 210px;
+
+  &:hover {
+    box-shadow: $z2;
+  }
+
+  h2 {
+    font-size: 1.3em;
+    line-height: 1.3em;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    max-height: 1.3em;
+    overflow: hidden;
+    text-align: center;
+    text-overflow: ellipsis;
+  }
+
+  img {
+    max-width: 210px;
+  }
+}

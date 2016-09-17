@@ -1,0 +1,10 @@
+.results {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  .result {
+    display: inline-block;
+    margin: 10px;
+  }
+}
