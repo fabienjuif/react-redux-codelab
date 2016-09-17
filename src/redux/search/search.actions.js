@@ -1,15 +1,15 @@
 export const SET_RESULTS = 'SET_RESULTS'
-export const setResults = (tvshows) => {
+export const setResults = (results) => {
   return {
     type: SET_RESULTS,
-    payload: tvshows,
+    payload: results,
   }
 }
 
-export const SET_SEARCH = 'SET_SEARCH'
-export const setSearch = (text) => {
+export const SET_TEXT = 'SET_TEXT'
+export const setText = (text) => {
   return {
-    type: SET_SEARCH,
+    type: SET_TEXT,
     payload: text,
   }
 }

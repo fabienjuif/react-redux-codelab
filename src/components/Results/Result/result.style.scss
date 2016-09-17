@@ -1,25 +1,27 @@
-@import '~styles/box-shadow';
+@import '~styles/colors';
 
 .result {
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  height: 295px;
   padding: 0;
+  position: relative;
   width: 210px;
 
-  &:hover {
-    box-shadow: $z2;
+  .bar {
+    align-items: center;
+    background-color: transparentize($white, .05);
+    display: flex;
+    padding: 5px;
+    width: 100%;
   }
 
-  h2 {
-    font-size: 1.3em;
-    line-height: 1.3em;
-    margin-bottom: 5px;
-    margin-top: 5px;
-    max-height: 1.3em;
-    overflow: hidden;
-    text-align: center;
-    text-overflow: ellipsis;
-  }
-
-  img {
-    max-width: 210px;
+  .more {
+    background-color: transparent;
+    box-shadow: none;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
   }
 }
