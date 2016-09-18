@@ -1,0 +1,15 @@
+.appbar {
+  align-items: center;
+  display: flex;
+  margin-bottom: 10px;
+
+  .button {
+    box-shadow: none;
+    margin-right: 10px;
+  }
+
+  .search {
+    margin-left: auto;
+    margin-right: 10px;
+  }
+}

@@ -1,12 +1,20 @@
 import React from 'react'
-import { RelativeFragment } from 'redux-little-router'
+import Appbar from 'muicss/lib/react/appbar'
+import Button from 'muicss/lib/react/button'
+import { RelativeFragment, Link } from 'redux-little-router'
 import Search from './Search'
 import Results from './Results'
 import TVShow from './TVShow'
+import styles from './App.style'
 
 const App = () => (
   <div>
-    <Search />
+    <Appbar className={styles.appbar}>
+      <Link href="/">
+        <Button variant="fab" color="primary" className={styles.button}><i className="material-icons">home</i></Button>
+      </Link>
+      <Search className={styles.search} />
+    </Appbar>
     <RelativeFragment forRoute="/tvshow/:id" children={<TVShow />} />
     <RelativeFragment forRoute="/" children={<Results />} />
   </div>
