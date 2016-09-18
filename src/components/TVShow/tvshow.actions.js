@@ -6,5 +6,9 @@ export const load = () => (dispatch, getState) => {
 
   fetch(`http://api.tvmaze.com/shows/${id}`)
     .then(raw => raw.json())
-    .then(tvshow => dispatch(setTVShow(tvshow)))
+    .then(tvshow =>
+      fetch(`http://api.tvmaze.com/shows/${id}/episodes`)
+        .then(raw => raw.json())
+        .then(episodes => dispatch(setTVShow({ ...tvshow, episodes })))
+    )
 }

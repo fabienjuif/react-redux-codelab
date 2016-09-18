@@ -1,13 +1,16 @@
+import pick from 'lodash/pick'
 import { connect } from 'react-redux'
 import { getId } from 'redux/router'
-import { getTVShow } from 'redux/tvshow'
+import { getTVShow, helpers } from 'redux/tvshow'
 import { load } from './tvshow.actions'
 import Component from './tvshow'
 
 const mapStateToProps = (state) => {
+  const tvshow = getTVShow(state)
+
   return {
-    loaded: Number(getId(state)) === getTVShow(state).id,
-    ...getTVShow(state),
+    loaded: Number(getId(state)) === tvshow.id,
+    ...pick(helpers.enhanceTVShow(tvshow), ['name', 'image', 'summary']),
   }
 }
 

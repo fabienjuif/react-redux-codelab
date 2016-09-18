@@ -1,11 +1,11 @@
 import { connect } from 'react-redux'
+import { defaultArray } from 'redux/defaults'
+import { getResults } from 'redux/search'
 import Component from './results'
-
-const defaultArray = []
 
 const mapStateToProps = (state) => {
   return {
-    results: state.search.results.map(result => result.show.id) || defaultArray,
+    results: getResults(state).map(result => result.show.id) || defaultArray,
   }
 }
 
