@@ -1,5 +1,6 @@
 import React from 'react'
 import { render } from 'react-dom'
+import { RouterProvider } from 'redux-little-router'
 import { Provider } from 'react-redux'
 
 import 'isomorphic-fetch'
@@ -14,7 +15,9 @@ import store from './redux/store'
 
 render(
   <Provider store={store}>
-    <App />
+    <RouterProvider store={store}>
+      <App />
+    </RouterProvider>
   </Provider>
   , document.getElementById('app')
 )

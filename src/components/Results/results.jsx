@@ -1,6 +1,6 @@
 import React, { PropTypes } from 'react'
 import Result from './Result'
-import styles from './results.style.scss'
+import styles from './results.style'
 
 const Results = ({ results }) => {
   return (
