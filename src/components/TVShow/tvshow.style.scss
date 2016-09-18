@@ -1,0 +1,20 @@
+.tvshow {
+  margin: 0 auto;
+  width: 90%;
+
+  h1 {
+    text-align: center;
+  }
+
+  .abstract {
+    display: flex;
+
+    img {
+      margin: 10px;
+    }
+
+    .summary {
+      margin: 10px;
+    }
+  }
+}

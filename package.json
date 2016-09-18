@@ -48,7 +48,7 @@
   },
   "dependencies": {
     "classnames": "^2.2.5",
-    "hoc-react-loader": "^1.0.1",
+    "hoc-react-loader": "^1.0.2",
     "lodash": "^4.14.2",
     "muicss": "^0.8.0",
     "react": "15.3.1",

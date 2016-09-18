@@ -1,0 +1,11 @@
+@import '~styles/colors';
+
+.episode {
+  &:hover {
+    background-color: lighten($mui-primary-color-light, 5%);
+  }
+
+  .button {
+    text-align: right;
+  }
+}
