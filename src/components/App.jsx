@@ -8,7 +8,7 @@ import TVShow from './TVShow'
 import styles from './App.style'
 
 const App = () => (
-  <div>
+  <RelativeFragment forRoute="/">
     <Appbar className={styles.appbar}>
       <Link href="/">
         <Button variant="fab" color="primary" className={styles.button}><i className="material-icons">home</i></Button>
@@ -17,6 +17,6 @@ const App = () => (
     </Appbar>
     <RelativeFragment forRoute="/tvshow/:id" children={<TVShow />} />
     <RelativeFragment forRoute="/" children={<Results />} />
-  </div>
+  </RelativeFragment>
 )
 export default App
