@@ -6,17 +6,23 @@ import Search from './Search'
 import Results from './Results'
 import TVShow from './TVShow'
 import styles from './App.style'
+import { login } from 'redux/firebase'
 
-const App = () => (
-  <RelativeFragment forRoute="/">
-    <Appbar className={styles.appbar}>
-      <Link href="/">
-        <Button variant="fab" color="primary" className={styles.button}><i className="material-icons">home</i></Button>
-      </Link>
-      <Search className={styles.search} />
-    </Appbar>
-    <RelativeFragment forRoute="/tvshow/:id" children={<TVShow />} />
-    <RelativeFragment forRoute="/" children={<Results />} />
-  </RelativeFragment>
-)
+const App = () => {
+  login()
+
+  return (
+    <RelativeFragment forRoute="/">
+      <Appbar className={styles.appbar}>
+        <Link href="/">
+          <Button variant="fab" color="primary" className={styles.button}><i className="material-icons">home</i></Button>
+        </Link>
+        <Search className={styles.search} />
+      </Appbar>
+      <RelativeFragment forRoute="/tvshow/:id" children={<TVShow />} />
+      <RelativeFragment forRoute="/" children={<Results />} />
+    </RelativeFragment>
+  )
+}
+
 export default App
