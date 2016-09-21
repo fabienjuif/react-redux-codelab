@@ -1,27 +1,36 @@
 import React from 'react'
 import Appbar from 'muicss/lib/react/appbar'
 import Button from 'muicss/lib/react/button'
-import { RelativeFragment, Link } from 'redux-little-router'
+import { RelativeFragment, AbsoluteFragment, Link } from 'redux-little-router'
 import Search from './Search'
 import Results from './Results'
 import TVShow from './TVShow'
+import User from './User'
+import TVShows from './TVShows'
 import styles from './App.style'
-import { login } from 'redux/firebase'
 
 const App = () => {
-  login()
-
   return (
-    <RelativeFragment forRoute="/">
+    <div>
       <Appbar className={styles.appbar}>
         <Link href="/">
-          <Button variant="fab" color="primary" className={styles.button}><i className="material-icons">home</i></Button>
+          <Button
+            variant="fab"
+            color="primary"
+            className={styles.button}
+          >
+            <i className="material-icons">home</i>
+          </Button>
         </Link>
         <Search className={styles.search} />
+        <User className={styles.user} />
       </Appbar>
       <RelativeFragment forRoute="/tvshow/:id" children={<TVShow />} />
-      <RelativeFragment forRoute="/" children={<Results />} />
-    </RelativeFragment>
+      <AbsoluteFragment forRoute="/">
+        <Results />
+        <TVShows />
+      </AbsoluteFragment>
+    </div>
   )
 }
 

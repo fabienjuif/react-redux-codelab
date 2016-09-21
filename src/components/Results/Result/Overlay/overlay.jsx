@@ -1,17 +1,13 @@
 import React, { PropTypes } from 'react'
 import { Link } from 'redux-little-router'
 import Button from 'muicss/lib/react/button'
+import Add from './Add'
 import styles from './overlay.style'
 
-const Overlay = ({ onAdd, id }) => {
+const Overlay = ({ id }) => {
   return (
     <div className={styles.overlay}>
-      <Button
-        color="primary"
-        className={styles.button}
-        onClick={onAdd}
-        children="ajouter"
-      />
+      <Add className={styles.button} id={id} />
       <Link href={`/tvshow/${id}`}>
         <Button
           color="default"
@@ -25,7 +21,6 @@ const Overlay = ({ onAdd, id }) => {
 }
 
 Overlay.propTypes = {
-  onAdd: PropTypes.func.isRequired,
   id: PropTypes.number.isRequired,
 }
 

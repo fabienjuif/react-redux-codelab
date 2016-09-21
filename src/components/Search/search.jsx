@@ -1,6 +1,13 @@
-import React from 'react'
-import Input from 'muicss/lib/react/input'
+import React, { PropTypes } from 'react'
+import loader from 'hoc-react-loader'
+import styles from './search.style'
 
-const Search = props => <Input label="Rechercher" floatingLabel {...props} />
+const Search = ({ className, ...rest }) => {
+  return <input className={`${styles.search} ${className}`} {...rest} />
+}
 
-export default Search
+Search.propTypes = {
+  className: PropTypes.string,
+}
+
+export default loader(Search, { wait: false })

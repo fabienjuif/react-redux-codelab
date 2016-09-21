@@ -18,4 +18,10 @@ const TVShow = ({ name, image, summary }) => {
   )
 }
 
+TVShow.propTypes = {
+  name: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
+  summary: PropTypes.string,
+}
+
 export default loader(TVShow)

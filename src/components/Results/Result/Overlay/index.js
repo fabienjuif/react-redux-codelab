@@ -1,1 +1,1 @@
-export default from './overlay.container'
+export default from './overlay'

@@ -4,11 +4,15 @@ import thunkMiddleware from 'redux-thunk'
 import router from './router'
 import search from './search'
 import tvshow from './tvshow'
+import user from './user'
+import seen from './seen'
 
 const store = createStore(
   combineReducers({
     search,
     tvshow,
+    user,
+    seen,
   }),
   compose(
     applyMiddleware(thunkMiddleware),

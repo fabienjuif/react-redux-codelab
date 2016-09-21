@@ -1,0 +1,14 @@
+@import '~styles/colors';
+
+.avatar {
+  align-items: center;
+  background-color: $background-light;
+  background-size: contain;
+  border: 1px solid $white;
+  border-radius: 50%;
+  display: flex;
+  height: 54px;
+  justify-content: center;
+  transform: translateZ(0);
+  width: 54px;
+}

@@ -7,4 +7,9 @@
 @import './styles/colors';
 
 // import MUI SASS
-@import '!style!css!sass!~muicss/lib/sass/mui';
+@import '~muicss/lib/sass/mui';
+
+// Global config
+* {
+  font-family: 'Roboto', 'Arial';
+}

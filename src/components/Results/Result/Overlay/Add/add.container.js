@@ -1,9 +1,10 @@
 import { connect } from 'react-redux'
-import Component from './overlay'
+import Component from './add'
+import { add } from './add.actions'
 
 const mapDispatchToProps = (dispatch, { id }) => {
   return {
-    onAdd: () => console.log(id), // TODO
+    onAdd: () => dispatch(add(id)),
   }
 }
 
