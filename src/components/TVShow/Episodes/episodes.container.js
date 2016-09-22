@@ -1,6 +1,6 @@
 import { connect } from 'react-redux'
-import { getEpisodes } from 'redux/tvshow'
 import { defaultArray } from 'redux/defaults'
+import { getEpisodes } from './episodes.selectors'
 import Component from './episodes'
 
 const mapStateToProps = (state) => {
@@ -8,7 +8,7 @@ const mapStateToProps = (state) => {
   const episodes = (raw || defaultArray).map(e => e.id)
 
   return {
-    loaded: episodes !== undefined,
+    loaded: raw !== undefined,
     episodes,
   }
 }

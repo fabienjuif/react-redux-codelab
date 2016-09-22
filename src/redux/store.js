@@ -6,13 +6,19 @@ import search from './search'
 import tvshow from './tvshow'
 import user from './user'
 import seen from './seen'
+import tvshows from './tvshows'
+import results from './results'
+import episodes from './episodes'
 
 const store = createStore(
-  combineReducers({
+  combineReducers({ // TODO : cut it like this : data, ui
     search,
     tvshow,
     user,
     seen,
+    tvshows,
+    results,
+    episodes,
   }),
   compose(
     applyMiddleware(thunkMiddleware),

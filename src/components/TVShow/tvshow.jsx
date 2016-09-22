@@ -3,7 +3,7 @@ import loader from 'hoc-react-loader'
 import Episodes from './Episodes'
 import styles from './tvshow.style'
 
-const TVShow = ({ name, image, summary }) => {
+const TVShow = ({ id, name, image, summary }) => {
   return (
     <div className={styles.tvshow}>
       <h1>{name}</h1>
@@ -13,7 +13,7 @@ const TVShow = ({ name, image, summary }) => {
         <div className={styles.summary} dangerouslySetInnerHTML={{ __html: summary }} />
       </div>
       <h2>Episodes</h2>
-      <Episodes />
+      <Episodes id={id} />
     </div>
   )
 }
@@ -21,6 +21,7 @@ const TVShow = ({ name, image, summary }) => {
 TVShow.propTypes = {
   name: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
+  id: PropTypes.number.isRequired,
   summary: PropTypes.string,
 }
 

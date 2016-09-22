@@ -1,9 +1,9 @@
 import { API_URL } from '../constants'
 
-export const SET_TVSHOW = 'SET_TVSHOW'
-export const setTVShow = (tvshow) => {
+export const ADD_TVSHOW = 'ADD_TVSHOW'
+export const addTVShow = (tvshow) => {
   return {
-    type: SET_TVSHOW,
+    type: ADD_TVSHOW,
     payload: tvshow,
   }
 }
@@ -14,6 +14,6 @@ export const fetchTvShow = id => (dispatch) => {
     .then(tvshow =>
       fetch(`${API_URL}shows/${id}/episodes`)
         .then(raw => raw.json())
-        .then(episodes => dispatch(setTVShow({ ...tvshow, episodes })))
+        .then(episodes => dispatch(addTVShow({ ...tvshow, episodes })))
     )
 }

@@ -1,4 +1,5 @@
 import React, { PropTypes } from 'react'
+import loader from 'hoc-react-loader'
 import Result from './Result'
 import styles from './results.style'
 
@@ -14,4 +15,4 @@ Results.propTypes = {
   results: PropTypes.arrayOf(PropTypes.number).isRequired,
 }
 
-export default Results
+export default loader(Results, { wait: false })

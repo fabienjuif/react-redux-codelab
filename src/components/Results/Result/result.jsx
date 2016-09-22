@@ -1,4 +1,5 @@
 import React, { PropTypes } from 'react'
+import loader from 'hoc-react-loader'
 import Panel from 'muicss/lib/react/panel'
 import Bar from './Bar'
 import Overlay from './Overlay'
@@ -21,4 +22,4 @@ Result.propTypes = {
   id: PropTypes.number.isRequired,
 }
 
-export default Result
+export default loader(Result)

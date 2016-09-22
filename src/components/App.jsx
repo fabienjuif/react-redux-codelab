@@ -6,7 +6,6 @@ import Search from './Search'
 import Results from './Results'
 import TVShow from './TVShow'
 import User from './User'
-import TVShows from './TVShows'
 import styles from './App.style'
 
 const App = () => {
@@ -26,10 +25,7 @@ const App = () => {
         <User className={styles.user} />
       </Appbar>
       <RelativeFragment forRoute="/tvshow/:id" children={<TVShow />} />
-      <AbsoluteFragment forRoute="/">
-        <Results />
-        <TVShows />
-      </AbsoluteFragment>
+      <AbsoluteFragment forRoute="/" children={<Results />} />
     </div>
   )
 }

@@ -1,12 +1,12 @@
 import pick from 'lodash/pick'
 import { connect } from 'react-redux'
-import { getShow } from 'redux/search'
+import { helpers } from 'redux/tvshows'
 import Component from './bar'
 
 // TODO : normalizr with result
 const mapDispatchToProps = (state, { id }) => {
   return {
-    ...pick(getShow(state, id), ['name']),
+    ...pick(helpers.getById(state, id), ['name']),
   }
 }
 
