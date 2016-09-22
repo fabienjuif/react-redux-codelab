@@ -8,4 +8,10 @@
   .button {
     text-align: right;
   }
+
+  &.seen {
+    background-color: $episode-seen-bg;
+    color: $episode-seen-fg;
+    font-style: italic;
+  }
 }

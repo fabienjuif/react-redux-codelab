@@ -1,6 +1,5 @@
 import reducer, { initState } from './search'
 import {
-  SET_RESULTS, setResults,
   SET_TEXT, setText,
 } from './search.actions'
 
@@ -24,22 +23,6 @@ describe('search reducer', () => {
       state.should.be.deep.equals({
         ...initState,
         text: 'scrubs',
-      })
-    })
-  })
-
-  describe(`${SET_RESULTS} action`, () => {
-    it('should set a new results', () => {
-      let state = reducer(initState, setResults(10))
-      state.should.be.deep.equals({
-        ...initState,
-        results: 10,
-      })
-
-      state = reducer(state, setResults(['a', 'b']))
-      state.should.be.deep.equals({
-        ...initState,
-        results: ['a', 'b'],
       })
     })
   })
