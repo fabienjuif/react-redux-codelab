@@ -1,7 +1,14 @@
 import { connect } from 'react-redux'
+import { getText } from 'redux/search'
 import { search } from './search.actions'
 
 import Component from './search'
+
+const mapStateToProps = (state) => {
+  return {
+    value: getText(state),
+  }
+}
 
 const mapDispatchToProps = (dispatch) => {
   return {
@@ -9,4 +16,4 @@ const mapDispatchToProps = (dispatch) => {
   }
 }
 
-export default connect(undefined, mapDispatchToProps)(Component)
+export default connect(mapStateToProps, mapDispatchToProps)(Component)

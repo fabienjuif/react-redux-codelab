@@ -3,10 +3,11 @@ import { fetchTvShow } from 'redux/tvshows'
 import { addEpisode } from 'redux/episodes'
 
 /* global firebase */
-export const connectFirebase = () => (dispatch) => {
+export const connectFirebase = () => (dispatch, getState) => {
   firebase.auth().onAuthStateChanged((user) => {
     if (user) {
-      const ref = firebase.database().ref(`${user.uid}/episodes`)
+      const showId = Number(getId(getState()))
+      const ref = firebase.database().ref(`${user.uid}/episodes/${showId}`)
 
       ref.on('child_added', (data) => { // TODO : detach event on willUnmount
         const id = data.val()
