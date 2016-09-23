@@ -3,7 +3,6 @@ import { createStoreWithRouter, initializeCurrentLocation } from 'redux-little-r
 import thunkMiddleware from 'redux-thunk'
 import router from './router'
 import search from './search'
-import tvshow from './tvshow'
 import user from './user'
 import seen from './seen'
 import tvshows from './tvshows'
@@ -13,7 +12,6 @@ import episodes from './episodes'
 const store = createStore(
   combineReducers({ // TODO : cut it like this : data, ui
     search,
-    tvshow,
     user,
     seen,
     tvshows,
