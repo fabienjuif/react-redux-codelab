@@ -1,5 +1,6 @@
 import { connect } from 'react-redux'
 import { defaultArray } from 'redux/defaults'
+import { fetchEpisodes } from 'redux/tvshows/episodes'
 import { getEpisodes } from './episodes.selectors'
 import Component from './episodes'
 
@@ -13,4 +14,10 @@ const mapStateToProps = (state) => {
   }
 }
 
-export default connect(mapStateToProps)(Component)
+const mapDispatchToProps = (dispatch, { id }) => {
+  return {
+    load: () => dispatch(fetchEpisodes(id)),
+  }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Component)
