@@ -13,3 +13,60 @@
 * {
   font-family: 'Roboto', 'Arial';
 }
+
+h1 {
+	font-size: 40px;
+	font-weight: 700;
+	font-family: 'Roboto Condensed', 'Arial';
+	margin-bottom: 30px;
+}
+
+.card {
+	background-color: white;
+	padding-bottom: 10px;
+	margin-bottom: 20px;
+	border-radius: 2px;
+	font-family: 'Roboto Condensed', 'Arial';
+	box-shadow: 4px 4px 8px rgba(150, 150, 150, .2);
+	h2 {
+		margin-top: 0;
+		height: 50px;
+		line-height: 50px;
+		margin-bottom: 20px;
+		font-size: 26px;
+		font-weight: 700;
+		font-family: 'Roboto Condensed', 'Arial';
+		padding-left: 20px;
+		background-color: #F44336;
+		color:white;
+	}
+	.card-content {
+		padding: 0px 20px;
+	}
+}
+
+#app {
+	background-color: #f2f2f2;
+}
+
+.mui-table {
+	tr{
+		height: 50px;
+		td{
+			padding: 0 10px !important;
+    	line-height: 1.429 !important;
+		}
+	}
+	thead {
+		background-color: #f2f2f2;
+		tr {
+			height: 50px;
+    	border-bottom: 3px solid #ddd;
+			th{
+				border-bottom: 0;
+				font-size: 18px;
+				font-weight: 700;
+			}
+		}
+	}
+}
