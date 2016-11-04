@@ -13,3 +13,14 @@
 * {
   font-family: 'Roboto', 'Arial';
 }
+
+h1 {
+  font-family: 'Roboto Condensed', 'Arial';
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+body {
+  background-color: $background-color;
+}

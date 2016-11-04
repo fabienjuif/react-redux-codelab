@@ -1,6 +1,6 @@
 import { API_URL } from '../../constants'
 
-export const SET_EPISODES = 'ADD_EPISODES'
+export const SET_EPISODES = 'SET_EPISODES'
 export const setEpisodes = (id, episodes) => {
   return {
     type: SET_EPISODES,

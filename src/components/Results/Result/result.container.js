@@ -10,7 +10,7 @@ const mapStateToProps = (state, { id }) => {
   return {
     ...pick(tvshow, ['name', 'image']),
     seen: getSeen(state).find(s => s.id === id) !== undefined,
-    loaded: tvshow.name, // FIXME (not loaded)
+    loaded: tvshow.name,
   }
 }
 

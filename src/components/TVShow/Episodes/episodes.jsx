@@ -1,11 +1,11 @@
 import React, { PropTypes } from 'react'
 import loader from 'hoc-react-loader'
-
 import Episode from './Episode'
+import styles from './episodes.style.scss'
 
-const Episodes = ({ episodes }) => {
+const Episodes = ({ className, episodes }) => {
   return (
-    <table className="mui-table mui-table--bordered">
+    <table className={`mui-table mui-table--bordered ${styles.table} ${className}`}>
       <thead>
         <tr>
           <th>Numéro</th>
@@ -19,6 +19,11 @@ const Episodes = ({ episodes }) => {
       </tbody>
     </table>
   )
+}
+
+Episodes.propTypes = {
+  episodes: PropTypes.arrayOf(PropTypes.number).isRequired,
+  className: PropTypes.string,
 }
 
 export default loader(Episodes)

@@ -1,9 +1,12 @@
+import sortBy from 'lodash/sortBy'
 import { getId } from 'redux/router'
 import { helpers } from 'redux/tvshows'
+import { defaultArray } from 'redux/defaults'
 
 export const getEpisodes = (state) => {
-  const id = getId(state)
-  const tvshow = helpers.getById(state, Number(id))
+  const id = Number(getId(state))
+  const tvshow = helpers.getById(state, id)
+  const episodes = tvshow.episodes || defaultArray
 
-  return tvshow.episodes
+  return sortBy(episodes, ['season', 'number']).reverse()
 }

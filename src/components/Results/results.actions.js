@@ -9,7 +9,7 @@ export const connectFirebase = () => (dispatch) => {
       const ref = firebase.database().ref(`${user.uid}/tvshows`)
 
       ref.on('child_added', (data) => {
-        const id = data.val()
+        const id = Number(data.val())
         dispatch(addSeen(id))
         dispatch(fetchTvShow(id))
       })

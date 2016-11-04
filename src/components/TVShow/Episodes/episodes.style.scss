@@ -1,0 +1,25 @@
+.table {
+  tr {
+    height: 50px;
+
+    td {
+      line-height: 1.429 !important;
+      padding: 0 10px !important;
+    }
+  }
+
+  thead {
+    background-color: #f2f2f2;
+
+    tr {
+      border-bottom: 3px solid #ddd;
+      height: 50px;
+
+      th {
+        border-bottom: 0;
+        font-size: 18px;
+        font-weight: 700;
+      }
+    }
+  }
+}

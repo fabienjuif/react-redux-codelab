@@ -5,9 +5,11 @@ import { getEpisode } from './episode.selectors'
 import Component from './episode'
 
 const mapStateToProps = (state, { id }) => {
+  const seen = getEpisodes(state).includes(id)
+
   return {
     ...pick(getEpisode(state, id), ['id', 'season', 'number', 'airdate', 'airtime', 'name']),
-    seen: (getEpisodes(state).find(e => e === id) !== undefined),
+    seen,
   }
 }
 
