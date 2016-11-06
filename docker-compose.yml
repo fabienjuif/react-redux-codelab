@@ -1,0 +1,19 @@
+version: '2'
+services:
+  firebasecli:
+    image: devillex/docker-firebase
+    volumes:
+      - "${PWD}/public:/public"
+  dev:
+    build: .
+    ports:
+      - "3000:3000"
+    volumes:
+      - "${PWD}/src:/usr/src/app/src"
+    command: "npm start"
+  build:
+    build: .
+    volumes:
+      - "${PWD}/src:/usr/src/app/src"
+      - "${PWD}/public:/usr/src/app/public"
+    command: "npm run build"
