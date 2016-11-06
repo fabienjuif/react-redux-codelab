@@ -5,7 +5,6 @@ import episodes, { SET_EPISODES } from './episodes'
 export const initState = []
 export const initAction = { type: 'UNKNOWN' }
 
-// TODO : handle duplicate network call when firebase has duplicate objects
 export default (state = initState, action = initAction) => {
   switch (action.type) {
     case SET_EPISODES: {

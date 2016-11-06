@@ -1,9 +1,21 @@
 version: '2'
 services:
-  firebasecli:
+  gettoken:
+    image: devillex/docker-firebase
+    ports:
+      - "9005:9005"
+    volumes:
+      - "${PWD}/public:/public"
+    command: "firebase login:ci"
+  publish:
     image: devillex/docker-firebase
     volumes:
       - "${PWD}/public:/public"
+      - "${PWD}/firebase.json:/firebase.json"
+    environment:
+      - "FIREBASE_TOKEN=${FIREBASE_TOKEN}"
+      - "FIREBASE_PROJECT=${FIREBASE_PROJECT}"
+    command: "firebase deploy --token=${FIREBASE_TOKEN} --non-interactive --project ${FIREBASE_PROJECT}"
   dev:
     build: .
     ports:
