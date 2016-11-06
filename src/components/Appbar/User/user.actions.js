@@ -8,7 +8,7 @@ export const login = () => (dispatch, getState) => {
 
   firebase.auth().signInWithPopup(provider)
     .then(user => dispatch(setUser(user.user)))
-    .catch(console.error)
+    .catch(console.error) // eslint-disable-line no-console
 }
 
 export const retrieveLogin = () => (dispatch) => {
