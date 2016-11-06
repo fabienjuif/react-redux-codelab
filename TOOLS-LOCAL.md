@@ -15,13 +15,13 @@ npm install -g firebase-cli
 
 ### Commands
   * start a local server (dev) with hot reloading
-    ```bash
-    yarn start
-    ```
+  ```bash
+  yarn start
+  ```
   * build the production bundle
-    ```bash
-    yarn run build
-    ```
+  ```bash
+  yarn run build
+  ```
   * firebase
    * get a firebase token:
    ```bash
