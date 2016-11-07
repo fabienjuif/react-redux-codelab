@@ -7,4 +7,8 @@ const UnView = ({ onClick }) => {
   )
 }
 
+UnView.propTypes = {
+  onClick: PropTypes.func.isRequired,
+}
+
 export default UnView

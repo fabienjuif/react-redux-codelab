@@ -14,4 +14,10 @@ const Avatar = ({ style, className, photoURL = '' }) => {
   )
 }
 
+Avatar.propTypes = {
+  style: PropTypes.object,
+  className: PropTypes.string,
+  photoURL: PropTypes.string,
+}
+
 export default Avatar

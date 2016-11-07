@@ -1,6 +1,6 @@
 import { SET_TEXT } from './search.actions'
 
-export const initState = { text: '', results: [] }
+export const initState = { text: '' }
 export const initAction = { type: 'UNKNOWN' }
 
 export default (state = initState, action = initAction) => {

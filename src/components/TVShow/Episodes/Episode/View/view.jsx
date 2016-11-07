@@ -7,4 +7,8 @@ const View = ({ onClick }) => {
   )
 }
 
+View.propTypes = {
+  onClick: PropTypes.func.isRequired,
+}
+
 export default View

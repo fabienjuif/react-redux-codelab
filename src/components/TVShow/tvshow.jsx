@@ -3,6 +3,8 @@ import loader from 'hoc-react-loader'
 import Episodes from './Episodes'
 import styles from './tvshow.style'
 
+/* eslint-disable react/no-danger */
+
 const TVShow = ({ id, name, image, summary }) => {
   return (
     <div className={styles.tvshow}>
@@ -24,6 +26,8 @@ const TVShow = ({ id, name, image, summary }) => {
     </div>
   )
 }
+
+/* eslint-enable react/no-danger */
 
 TVShow.propTypes = {
   name: PropTypes.string.isRequired,

@@ -17,4 +17,9 @@ const Home = ({ className, onClick }) => {
   )
 }
 
+Home.propTypes = {
+  className: PropTypes.string,
+  onClick: PropTypes.func.isRequired,
+}
+
 export default Home

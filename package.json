@@ -8,7 +8,7 @@
   "scripts": {
     "start": "set NODE_ENV=development && webpack-dev-server --host 0.0.0.0 --inline --hot --port=3000 --history-api-fallback",
     "build": "NODE_ENV=production webpack --define process.env.NODE_ENV='\"production\"' -p ",
-    "lint": "eslint src && find ./src/ -iname \"*.scss\" -exec sass-lint -v -q {} +",
+    "lint": "eslint --ext js,jsx src && find ./src/ -iname \"*.scss\" -exec sass-lint -v -q {} +",
     "test": "NODE_ENV=test mocha --recursive --compilers js:babel-register --require ./misc/testSetup.js \"src/**/*.spec.js\" "
   },
   "author": "Fabien JUIF",
@@ -45,7 +45,7 @@
     "react-hot-loader": "~1.3.0",
     "sass-lint": "^1.8.2",
     "sass-loader": "^4.0.2",
-    "sinon": "~1.17.3",
+    "sinon": "^1.17.6",
     "style-loader": "~0.13.1",
     "webpack": "~1.13.2",
     "webpack-dev-server": "~1.15.2"

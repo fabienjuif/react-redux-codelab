@@ -27,23 +27,24 @@ This steps are summaries:
   * redux-little-router
     * When we click a tv show, it should open a new page with detailed informations and episodes
     * This is also the time to retrieve some URL options (route params)
-  * CSS: Sass & css-modules
-    * Scoping our CSS
-    * Sass instead of pure CSS
-    * And auto-prefixer demonstration
   * reselect
     * Optimize our container (react-redux)
-  * normalizr
-    * Normalize the TVMaze API for simplier reuse
-  * TODO: firebase
-  * TODO: circleCI
-  * TODO: mocha-sinon-chai
+  * firebase
+    * Deploy the application on your own account
 
 ## Get tools
 You should install these tools to your browser, these are must-haves:
   * [google-chrome](https://www.google.fr/chrome/browser/desktop/)
   * [redux-devtools](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd)
   * [react-devtools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi)
+  * [Atom](https://atom.io/)
+    * Plugins:
+      * highlight-selected
+      * file-icons
+      * react
+      * pigment
+      * linter-eslint
+      * linter-sass-lint
 
 To get the others tools and dependencies, you could choose between:
   * [Install everything locally](./TOOLS-LOCAL.md)

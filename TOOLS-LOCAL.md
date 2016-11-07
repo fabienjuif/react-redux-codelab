@@ -28,8 +28,8 @@ npm install -g firebase-cli
     ```bash
     export FIREBASE_PROJECT=<project name>
     export FIREBASE_TOKEN=<previous TOKEN>
-    deploy --token=${FIREBASE_TOKEN} --non-interactive --project ${FIREBASE_PROJECT}
+    firebase deploy --token=${FIREBASE_TOKEN} --non-interactive --project ${FIREBASE_PROJECT}
     ```
 
 # Windows
-Deer Windows users, I bet [git-bash](https://git-for-windows.github.io/) is nice to use the previous commands lines.
+Dear Windows users, I bet [git-bash](https://git-for-windows.github.io/) is nice to use the previous commands lines.

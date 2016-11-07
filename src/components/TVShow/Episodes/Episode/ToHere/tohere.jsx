@@ -7,4 +7,8 @@ const ToHere = ({ onClick }) => {
   )
 }
 
+ToHere.propTypes = {
+  onClick: PropTypes.func.isRequired,
+}
+
 export default ToHere
