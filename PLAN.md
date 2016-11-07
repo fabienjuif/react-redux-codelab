@@ -33,10 +33,14 @@ Pour chaque brique:
     - Faire des TU pour valider les étapes de fonction
 --
 
-[10] firebase
+[10] Firebase
   Exemple: Juste le déploiement
     Créer le compte
     Récupérer le token, etc
+
+-- Bonus si temps --
+[15] Firebase: Refaire le bouton "Pas vu"
+--
 
 -- Bonus, pas en codelab, juste à l'oral si temps --
  [15] Sass
