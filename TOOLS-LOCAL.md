@@ -1,9 +1,10 @@
 ## Local
 You wanna have everything installed to your local machine.
 Ok let's go.
-First thing first: you need npm and node, I let you install it yourself.
 
-Then run the following pre-requires:
+Install npm and node.
+
+Then run the following commands:
 ```bash
 # Get a faster npm
 npm install -g yarn
@@ -17,7 +18,7 @@ npm install -g firebase-cli
   * start a local server (dev) with hot reloading: `yarn start` (http://localhost:3000)
   * run tests: `yarn test`
   * run linters: `yarn lint`
-  * build the production bundle: `yarn run build`
+  * build the production bundle: `yarn build`
   * firebase
    * get a firebase token:
    ```bash
@@ -34,4 +35,4 @@ npm install -g firebase-cli
     ```
 
 # Windows
-Dear Windows users, I bet [git-bash](https://git-for-windows.github.io/) is nice to use the previous commands lines.
+Dear Windows users, [git-bash](https://git-for-windows.github.io/) should be enough to run the previous commands lines.

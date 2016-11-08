@@ -13,7 +13,7 @@ test:
 
 deployment:
   production:
-    branch: dev
+    branch: master
     commands:
       - npm install -g firebase-tools
       - docker run --rm -v $(pwd):/usr/src/app zenika/alpine-node npm run build

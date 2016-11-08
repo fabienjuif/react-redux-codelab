@@ -1,6 +1,5 @@
 # react-redux-codelab: tvscrub
-In this codelab we build a tv shows episodes follower.
-The technologies are: react, redux and firebase.
+In this codelab we will build a tvshows tracker with react, redux and firebase.
 
 You can find an instance here to play with: [react-redux-codelab (hosted by Firebase)](https://react-redux-codelab.firebaseapp.com/)
 
@@ -19,21 +18,23 @@ For full steps, you can look up to the Google doc.
 
 This steps are summaries:
   * React
-    * Simple reminder, how do we do a react component (as pure function)
+    * How do we create a react component (as pure function)
   * Redux
-    * Simple reminder, how do we do a redux reducer and action
+    * How do we create a reducer and an action with redux
   * react-redux
-    * Simple reminder, how do we connect our component to our state/actions
+    * How do we connect our component to our state/actions
+  * redux-thunk
+    * How do we dispatch asynchronous actions
   * redux-little-router
-    * When we click a tv show, it should open a new page with detailed informations and episodes
+    * How do we activate browser navigation
     * This is also the time to retrieve some URL options (route params)
   * reselect
-    * Optimize our container (react-redux)
+    * How to we optimize our container (react-redux)
   * firebase
-    * Deploy the application on your own account
+    * How do we deploy the application on your own account
 
 ## Get tools
-You should install these tools to your browser, these are must-haves (but are optionals):
+You should install these tools, those are must-haves (but are optionals):
   * [google-chrome](https://www.google.fr/chrome/browser/desktop/)
   * [redux-devtools](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd)
   * [react-devtools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi)

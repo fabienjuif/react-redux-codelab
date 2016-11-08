@@ -1,8 +1,7 @@
 ## Docker
-You don't want to have to install node, npm, firebase, etc.
-You can use the `docker-compose.yml` file.
+You don't want to have to install node, npm, firebase, etc: You can use docker.
 
-To download The needed images:
+Download the following images:
 ```bash
 # Dependencies, npm and node
 docker pull fabienjuif/react-redux-codelab
