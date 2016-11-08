@@ -10,37 +10,37 @@ docker pull fabienjuif/react-redux-codelab
 docker pull devillex/docker-firebase
 ```
 
-### Helpers (docker-compose.yml)
+### Commands
   * start a local server (dev) with hot reloading (http://localhost:3000)
-    ```bash
-    docker run -it --rm \
-      -p3000:3000 \
-      -v${PWD}/src:/usr/src/app/src \
-      fabienjuif/react-redux-codelab \
-      npm start
-    ```
+```bash
+docker run -it --rm \
+  -p3000:3000 \
+  -v${PWD}/src:/usr/src/app/src \
+  fabienjuif/react-redux-codelab \
+  npm start
+```
   * run tests
-  ```bash
-  docker run -it --rm \
-    -v${PWD}/src:/usr/src/app/src \
-    fabienjuif/react-redux-codelab \
-    npm test
-  ```
+```bash
+docker run -it --rm \
+  -v${PWD}/src:/usr/src/app/src \
+  fabienjuif/react-redux-codelab \
+  npm test
+```
   * run linters
-  ```bash
-  docker run -it --rm \
-    -v${PWD}/src:/usr/src/app/src \
-    fabienjuif/react-redux-codelab \
-    npm run lint
-  ```
+```bash
+docker run -it --rm \
+  -v${PWD}/src:/usr/src/app/src \
+  fabienjuif/react-redux-codelab \
+  npm run lint
+```
   * build the production bundle
-    ```bash
-    docker run -it --rm \
-      -v${PWD}/public:/usr/src/app/public \
-      -v${PWD}/src:/usr/src/app/src \
-      fabienjuif/react-redux-codelab \
-      npm run build
-    ```
+```bash
+docker run -it --rm \
+  -v${PWD}/public:/usr/src/app/public \
+  -v${PWD}/src:/usr/src/app/src \
+  fabienjuif/react-redux-codelab \
+  npm run build
+```
   * firebase
    * get a firebase token:
    ```bash
