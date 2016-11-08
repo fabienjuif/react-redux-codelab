@@ -1,0 +1,19 @@
+.appbar {
+  align-items: center;
+  display: flex;
+  margin-bottom: 10px;
+
+  .button {
+    box-shadow: none;
+    margin-left: 10px;
+  }
+
+  .search {
+    margin-left: 10px;
+  }
+
+  .user {
+    margin-left: auto;
+    margin-right: 10px;
+  }
+}

@@ -1,0 +1,37 @@
+@import '~styles/colors';
+
+.overlay {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+
+  &:hover {
+    background-color: transparentize($black, .2);
+
+    .button {
+      display: block;
+    }
+  }
+
+  a {
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  .button {
+    display: none;
+    margin: 5px 0;
+
+    &:global(.mui-btn--flat) {
+      background-color: transparentize($white, .8);
+      color: $white;
+
+      &:hover {
+        background-color: transparentize($white, .5);
+      }
+    }
+  }
+}

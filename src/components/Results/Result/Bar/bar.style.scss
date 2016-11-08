@@ -1,0 +1,17 @@
+@import '~styles/colors';
+
+.bar {
+  align-items: center;
+  background-color: transparentize($white, .05);
+  display: flex;
+  padding: 5px;
+  width: 100%;
+
+  .more {
+    background-color: transparent;
+    box-shadow: none;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+  }
+}

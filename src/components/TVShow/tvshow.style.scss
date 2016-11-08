@@ -1,0 +1,49 @@
+@import '~styles/colors';
+@import '~styles/box-shadow';
+
+.tvshow {
+  margin: 0 auto;
+  width: 90%;
+
+  h1 {
+    text-align: center;
+  }
+
+  .abstract {
+    display: flex;
+    margin: 0 10px;
+
+    img {
+      margin: 10px;
+    }
+
+    .summary {
+      margin: 10px;
+    }
+  }
+}
+
+.card {
+  background-color: $white;
+  border-radius: 2px;
+  box-shadow: $card-bs;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+
+  h2 {
+    background-color: $mui-primary-color;
+    color: $white;
+    font-family: 'Roboto Condensed', 'Arial';
+    font-size: 26px;
+    font-weight: 700;
+    height: 50px;
+    line-height: 50px;
+    margin-bottom: 10px;
+    margin-top: 0;
+    padding-left: 20px;
+ 	}
+
+  .episodes {
+    padding: 0 20px;
+  }
+ }

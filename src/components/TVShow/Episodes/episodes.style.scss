@@ -1,0 +1,27 @@
+@import '~styles/colors';
+
+.table {
+  tr {
+    height: 50px;
+
+    td {
+      line-height: 1.429 !important;
+      padding: 0 10px !important;
+    }
+  }
+
+  thead {
+    background-color: $background-color;
+
+    tr {
+      border-bottom: 3px solid darken($background-color, 15%);
+      height: 50px;
+
+      th {
+        border-bottom: 0;
+        font-size: 18px;
+        font-weight: 700;
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+@import '~styles/colors';
+
+.search {
+  background-color: $background-light;
+  border: 0;
+  border-radius: 2px;
+  min-width: 180px;
+  outline: none;
+  padding: 5px 10px;
+  width: 20%;
+}

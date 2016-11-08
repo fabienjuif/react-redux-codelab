@@ -1,0 +1,34 @@
+@import '~styles/colors';
+
+.episode {
+  height: 69px;
+
+  &:hover {
+    background-color: lighten($mui-primary-color-light, 5%);
+  }
+
+  .button {
+    text-align: right;
+  }
+
+  &.seen {
+    background-color: $episode-seen-bg;
+    color: $episode-seen-fg;
+    font-style: italic;
+  }
+
+  &.hide {
+    height: 0;
+    overflow: hidden;
+    transition: 1s;
+
+    td {
+      border: 0 !important;
+      font-size: 0;
+      height: 0;
+      margin: 0;
+      overflow: hidden;
+      padding: 0;
+    }
+  }
+}
