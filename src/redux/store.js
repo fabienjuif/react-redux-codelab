@@ -1,7 +1,4 @@
 import { createStore, applyMiddleware, combineReducers, compose } from 'redux'
-/* FIXME(router):
-import { createStoreWithRouter, initializeCurrentLocation } from 'redux-little-router'
-*/
 import thunkMiddleware from 'redux-thunk'
 import router from './router'
 import search from './search'
@@ -19,23 +16,13 @@ const store = createStore(
     tvshows,
     results,
     episodes,
-    router, // FIXME(router): delete this
+    router,
   }),
   compose(
     applyMiddleware(thunkMiddleware),
-    // FIXME(router): createStoreWithRouter({
-    //  routes: router,
-    //  pathname: window.location.pathname,
-    // }),
     /* eslint-env browser */
     window.devToolsExtension ? window.devToolsExtension() : f => f
   )
 )
-
-/* FIXME(router): const initialLocation = store.getState().router
-if (initialLocation) {
-  store.dispatch(initializeCurrentLocation(initialLocation))
-}
-*/
 
 export default store

@@ -9,16 +9,3 @@ export default (state = initState, action = initAction) => {
     default: return state
   }
 }
-
-/* FIXME(router) export default {
-  '/': {
-    title: 'HOME',
-    '/toto': {
-      title: 'TOTO',
-    },
-    '/tvshow/:id': {
-      title: 'TVSHOW',
-    },
-  },
-}
-*/

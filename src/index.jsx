@@ -12,17 +12,6 @@ import store from './redux/store'
 
 /* eslint-env browser */
 
-
-/* FIXME(router): render(
-  <Provider store={store}>
-    <RouterProvider store={store}>
-      <App />
-    </RouterProvider>
-  </Provider>
-  , document.getElementById('app')
-)
-*/
-
 render(
   <Provider store={store}>
     <App />

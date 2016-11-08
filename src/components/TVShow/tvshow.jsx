@@ -36,9 +36,5 @@ TVShow.propTypes = {
   summary: PropTypes.string,
 }
 
-// FIXME(router)
-// export default loader(TVShow)
-
-//
 const LoadingIndicator = () => <div />
 export default loader(TVShow, { LoadingIndicator })

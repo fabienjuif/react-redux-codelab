@@ -1,6 +1,5 @@
 import { connect } from 'react-redux'
 import { getId } from 'redux/router'
-// FIXME(router): import { load } from './tvshow.actions'
 import { getTvShow } from './tvshow.selectors'
 import Component from './tvshow'
 
@@ -25,11 +24,4 @@ const mapStateToProps = (state) => {
   }
 }
 
-/* FIXME(router): const mapDispatchToProps = (dispatch) => {
-  return {
-    load: () => dispatch(load()),
-  }
-}
-*/
-
-export default connect(mapStateToProps /* FIXME(router):  mapDispatchToProps */)(Component)
+export default connect(mapStateToProps)(Component)

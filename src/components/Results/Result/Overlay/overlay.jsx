@@ -1,5 +1,4 @@
 import React, { PropTypes } from 'react'
-// FIXME(router): import { Link } from 'redux-little-router'
 import Button from 'muicss/lib/react/button'
 import Add from './Add'
 import styles from './overlay.style'
