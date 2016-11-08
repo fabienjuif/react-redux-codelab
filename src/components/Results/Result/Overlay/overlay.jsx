@@ -1,21 +1,20 @@
 import React, { PropTypes } from 'react'
-import { Link } from 'redux-little-router'
+// FIXME(router): import { Link } from 'redux-little-router'
 import Button from 'muicss/lib/react/button'
 import Add from './Add'
 import styles from './overlay.style'
 
-const Overlay = ({ id, seen }) => {
+const Overlay = ({ id, seen, onClick }) => {
   return (
     <div className={styles.overlay}>
       {seen || <Add className={styles.button} id={id} />}
-      <Link href={`/tvshow/${id}`}>
-        <Button
-          color="default"
-          variant="flat"
-          className={styles.button}
-          children="consulter"
-        />
-      </Link>
+      <Button
+        color="default"
+        variant="flat"
+        className={styles.button}
+        children="consulter"
+        onClick={onClick}
+      />
     </div>
   )
 }
@@ -23,6 +22,7 @@ const Overlay = ({ id, seen }) => {
 Overlay.propTypes = {
   id: PropTypes.number.isRequired,
   seen: PropTypes.bool.isRequired,
+  onClick: PropTypes.func.isRequired,
 }
 
 export default Overlay

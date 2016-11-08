@@ -1,6 +1,5 @@
 import React from 'react'
 import { render } from 'react-dom'
-import { RouterProvider } from 'redux-little-router'
 import { Provider } from 'react-redux'
 
 import 'isomorphic-fetch'
@@ -13,11 +12,20 @@ import store from './redux/store'
 
 /* eslint-env browser */
 
-render(
+
+/* FIXME(router): render(
   <Provider store={store}>
     <RouterProvider store={store}>
       <App />
     </RouterProvider>
+  </Provider>
+  , document.getElementById('app')
+)
+*/
+
+render(
+  <Provider store={store}>
+    <App />
   </Provider>
   , document.getElementById('app')
 )
