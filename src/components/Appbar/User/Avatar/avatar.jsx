@@ -1,22 +1,21 @@
 import React, { PropTypes } from 'react'
-import styles from './avatar.style'
+// FIXME(react) import styles from './avatar.style'
 
-const Avatar = ({ style, className, photoURL = '' }) => {
-  const ownStyle = {
-    backgroundImage: `url(${photoURL})`,
-    ...style,
-  }
+// FIXME(react) - Component
+// - Input: photoURL
+// - If photoURL is empty, print this : <i className="material-icons">supervisor_account</i>
 
+// FIXME(react) - Styling
+// - Classes : `className={styles.avatar}`
+// - Dynamic style exemple : `style={{ backgroundColor: 'green' }}`
+
+const Avatar = () => {
   return (
-    <div style={ownStyle} className={`${styles.avatar} ${className}`}>
-      {photoURL !== '' || <i className="material-icons">supervisor_account</i>}
-    </div>
+    <div>&nbsp;TODO</div>
   )
 }
 
 Avatar.propTypes = {
-  style: PropTypes.object,
-  className: PropTypes.string,
   photoURL: PropTypes.string,
 }
 
