@@ -12,7 +12,7 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    onChange: event => dispatch(search(event.target.value)),
+    onChange: event => search(event.target.value, dispatch),
   }
 }
 

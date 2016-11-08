@@ -5,7 +5,7 @@ import { setResults } from '../../../redux/results'
 // FIXME(router): import { getTitle } from '../../../redux/router'
 import { API_URL } from '../../../redux/constants'
 
-export const fetchTVShows = text => (dispatch) => {
+export const fetchTVShows = (text, dispatch) => {
   fetch(`${API_URL}search/shows?q=${text}`)
     .then(raw => raw.json())
     .then((results) => {
@@ -15,9 +15,9 @@ export const fetchTVShows = text => (dispatch) => {
     })
 }
 
-export const search = value => (dispatch /* FIXME(router), getState */) => {
+export const search = (value, dispatch /* FIXME(router), getState */) => {
   dispatch(setText(value))
-  dispatch(fetchTVShows(value))
+  fetchTVShows(value, dispatch)
 
   /* FIXME(router) const title = getTitle(getState())
   if (title !== 'HOME') {
