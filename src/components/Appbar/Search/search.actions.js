@@ -1,8 +1,6 @@
-// FIXME(router): import { PUSH } from 'redux-little-router'
-import { setText } from '../../../redux/search'
+// FIXME(react-redux): import { setText } from '../../../redux/search'
 import { addTVShow } from '../../../redux/tvshows'
 import { setResults } from '../../../redux/results'
-// FIXME(router): import { getTitle } from '../../../redux/router'
 import { API_URL } from '../../../redux/constants'
 
 export const fetchTVShows = (text, dispatch) => {
@@ -15,15 +13,7 @@ export const fetchTVShows = (text, dispatch) => {
     })
 }
 
-export const search = (value, dispatch /* FIXME(router), getState */) => {
-  dispatch(setText(value))
+export const search = (value, dispatch) => {
+  // FIXME(react-redux): call setText
   fetchTVShows(value, dispatch)
-
-  /* FIXME(router) const title = getTitle(getState())
-  if (title !== 'HOME') {
-    dispatch({
-      type: PUSH,
-      payload: '/',
-    })
-  }*/
 }

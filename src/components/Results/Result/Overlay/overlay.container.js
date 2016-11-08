@@ -11,7 +11,6 @@ const mapStateToProps = (state, { id }) => {
   }
 }
 
-// FIXME(router): delete mapDispatchToProps
 const mapDispatchToProps = (dispatch, { id }) => {
   return {
     onClick: () => {
