@@ -15,6 +15,8 @@ npm install -g firebase-cli
 
 ### Commands
   * start a local server (dev) with hot reloading: `yarn start` (http://localhost:3000)
+  * run tests: `yarn test`
+  * run linters: `yarn lint`
   * build the production bundle: `yarn run build`
   * firebase
    * get a firebase token:

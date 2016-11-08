@@ -19,6 +19,20 @@ docker pull devillex/docker-firebase
       fabienjuif/react-redux-codelab \
       npm start
     ```
+  * run tests
+  ```bash
+  docker run -it --rm \
+    -v${PWD}/src:/usr/src/app/src \
+    fabienjuif/react-redux-codelab \
+    npm test
+  ```
+  * run linters
+  ```bash
+  docker run -it --rm \
+    -v${PWD}/src:/usr/src/app/src \
+    fabienjuif/react-redux-codelab \
+    npm run lint
+  ```
   * build the production bundle
     ```bash
     docker run -it --rm \
