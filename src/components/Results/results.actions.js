@@ -1,8 +1,6 @@
 import { fetchTvShow } from 'redux/tvshows'
 import { addSeen } from 'redux/seen'
 
-// TODO : move it
-/* global firebase */
 export const connectFirebase = () => (dispatch) => {
   firebase.auth().onAuthStateChanged((user) => {
     if (user) {
@@ -15,11 +13,4 @@ export const connectFirebase = () => (dispatch) => {
       })
     }
   })
-
-  // TODO
-  /*
-  ref.on('child_removed', function(data) {
-    deleteComment(postElement, data.key);
-  });
-  */
 }

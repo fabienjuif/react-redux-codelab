@@ -10,7 +10,7 @@ import results from './results'
 import episodes from './episodes'
 
 const store = createStore(
-  combineReducers({ // TODO : cut it like this : data, ui
+  combineReducers({
     search,
     user,
     seen,

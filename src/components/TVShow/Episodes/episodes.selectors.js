@@ -1,8 +1,8 @@
 import sortBy from 'lodash/sortBy'
 import { createSelector } from 'reselect'
-import { getId } from 'redux/router'
-import { helpers, getTVShows } from 'redux/tvshows'
-import { defaultArray } from 'redux/defaults'
+import { getId } from '../../../redux/router'
+import { helpers, getTVShows } from '../../../redux/tvshows'
+import { defaultArray } from '../../../redux/defaults'
 
 export const getEpisodes = createSelector(
   [getId, getTVShows],

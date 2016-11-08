@@ -4,9 +4,6 @@
 import _ from 'lodash'
 import { fetchTVShows } from './search.actions'
 
-
-// FIXME mock fetch
-
 describe('search actions', () => {
   describe('fetchTVShows action', () => {
     describe('Natures', () => {
