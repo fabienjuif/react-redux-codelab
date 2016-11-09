@@ -12,6 +12,7 @@ You can find an instance here to play with: [react-redux-codelab (hosted by Fire
 1. Tools and libs: [Google doc -fr-](https://docs.google.com/presentation/d/1NlW5g9BY4QHIgyGbQqZxWtR3KugYmyUvSUAsHezmCo0/edit?usp=sharing)
 2. Conventions: [Google doc -fr-](https://docs.google.com/presentation/d/1TWKIQmv0Sye7mMAiJhywPccswJkgi8rxUUc1kYvTHjA/edit?usp=sharing)
 3. Steps: [PLAN -fr-](./PLAN.md)
+4. Steps (detail): [Google doc -fr-](https://docs.google.com/presentation/d/1qU1pqq3TXb-0jLTKToKLcKremc8A6sVqXknNzGxdrhU/edit?usp=sharing)
 
 ## Steps
 For full steps, you can look up to the Google doc.
