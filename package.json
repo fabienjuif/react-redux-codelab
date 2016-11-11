@@ -6,7 +6,7 @@
     "doc": "doc"
   },
   "scripts": {
-    "start": "set NODE_ENV=development && webpack-dev-server --host 0.0.0.0 --inline --hot --port=3000 --history-api-fallback",
+    "start": "set NODE_ENV=development && webpack-dev-server --host 0.0.0.0 --inline --hot --port=3000 --history-api-fallback --watch-poll",
     "build": "NODE_ENV=production webpack --define process.env.NODE_ENV='\"production\"' -p ",
     "lint": "eslint --ext js,jsx src && find ./src/ -iname \"*.scss\" -exec sass-lint -v -q {} +",
     "test": "NODE_ENV=test mocha --recursive --compilers js:babel-register --require ./misc/testSetup.js \"src/**/*.spec.js\" "

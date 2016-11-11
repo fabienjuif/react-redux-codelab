@@ -12,7 +12,6 @@ console.log(`MODE=${dev ? 'dev' : 'production'}`)
 
 function getEntrySources(sources) {
   if (dev) {
-    sources.push('webpack-dev-server/client?http://localhost:3000')
     sources.push('webpack/hot/only-dev-server')
   }
 
