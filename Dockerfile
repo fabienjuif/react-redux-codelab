@@ -1,1 +1,1 @@
-FROM node:7-onbuild
+FROM zenika/alpine-node:onbuild 

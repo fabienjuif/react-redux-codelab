@@ -3,3 +3,6 @@ node_modules
 src
 public
 yarn.lock
+resources
+Dockerfile
+*.md
