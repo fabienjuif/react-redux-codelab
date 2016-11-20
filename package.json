@@ -6,10 +6,10 @@
     "doc": "doc"
   },
   "scripts": {
-    "start": "set NODE_ENV=development && webpack-dev-server --host 0.0.0.0 --inline --hot --port=3000 --history-api-fallback",
-    "build": "NODE_ENV=production webpack --define process.env.NODE_ENV='\"production\"' -p ",
+    "start": "cross-env NODE_ENV=development webpack-dev-server --host 0.0.0.0 --inline --hot --port=3000 --history-api-fallback --watch-poll",
+    "build": "cross-env NODE_ENV=production webpack --define process.env.NODE_ENV='\"production\"' -p ",
     "lint": "eslint --ext js,jsx src && find ./src/ -iname \"*.scss\" -exec sass-lint -v -q {} +",
-    "test": "NODE_ENV=test mocha --recursive --compilers js:babel-register --require ./misc/testSetup.js \"src/**/*.spec.js\" "
+    "test": "cross-env NODE_ENV=test mocha --recursive --compilers js:babel-register --require ./misc/testSetup.js \"src/**/*.spec.js\" "
   },
   "author": "Fabien JUIF",
   "license": "MIT",
@@ -28,6 +28,7 @@
     "babel-preset-stage-0": "~6.5.0",
     "babel-register": "~6.14.0",
     "chai": "~3.5.0",
+    "cross-env": "^3.1.3",
     "css-loader": "^0.25.0",
     "eslint": "^3.2.2",
     "eslint-config-airbnb": "^11.1.0",
