@@ -2,7 +2,7 @@
 You wanna have everything installed to your local machine.
 Ok let's go.
 
-Install npm and node.
+Install npm (>=3) and node (>=7).
 
 Then run the following commands:
 ```bash
