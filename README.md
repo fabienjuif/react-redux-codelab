@@ -35,6 +35,10 @@ This steps are summaries:
     * How do we deploy the application on your own account
 
 ## Get tools
+Tools and dependencies that are **NEEDED**, choose between:
+  * [Install everything locally](./TOOLS-LOCAL.md)
+  * [Use docker](./TOOLS-DOCKER.md)
+ 
 You should install these tools, those are must-haves (but are optionals):
   * [google-chrome](https://www.google.fr/chrome/browser/desktop/)
   * [redux-devtools](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd)
@@ -48,6 +52,4 @@ You should install these tools, those are must-haves (but are optionals):
       * linter-eslint
       * linter-sass-lint
 
-To get the others tools and dependencies (**NEEDED**), you could choose between:
-  * [Install everything locally](./TOOLS-LOCAL.md)
-  * [Use docker](./TOOLS-DOCKER.md)
+
