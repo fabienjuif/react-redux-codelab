@@ -6,7 +6,7 @@
     "doc": "doc"
   },
   "scripts": {
-    "start": "cross-env NODE_ENV=development webpack-dev-server --host 0.0.0.0 --inline --hot --port=3000 --history-api-fallback --watch-poll",
+    "start": "cross-env NODE_ENV=development webpack-dev-server --host 0.0.0.0 --inline --hot --port=3000 --history-api-fallback --watch-poll=1000",
     "build": "cross-env NODE_ENV=production webpack --define process.env.NODE_ENV='\"production\"' -p ",
     "lint": "eslint --ext js,jsx src && find ./src/ -iname \"*.scss\" -exec sass-lint -v -q {} +",
     "test": "cross-env NODE_ENV=test mocha --recursive --compilers js:babel-register --require ./misc/testSetup.js \"src/**/*.spec.js\" "
